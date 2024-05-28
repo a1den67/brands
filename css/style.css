@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(../fonts/TTLakes-Regular.woff2) format('woff2'),
+        url(../fonts/TTLakes-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(../fonts/TTLakes-Medium.woff2) format('woff2'),
+        url(../fonts/TTLakes-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(../fonts/TTLakes-Bold.woff2) format('woff2'),
+        url(../fonts/TTLakes-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Lakes';
+}
+
+
+.brands__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7e7e82;
+    margin: 15px 0 20px 24px;
+}
+
+.brands__card {
+    display: flex;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.brands__lenovo {
+    background-image: url(../images/Bitmap.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 108px;
+    height: 32px;
+    padding-left: 16px;
+}
+
+.brands__samsung {
+    background-image: url(../images/samsung.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 116px;
+    height: 38px;
+    padding-left: 16px;
+}
+
+.brands__apple {
+    background-image: url(../images/apple.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+    padding-left: 16px;
+}
+
+.brands__sonic {
+    background-image: url(../images/viewSonic.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 128px;
+    height: 21px;
+    padding-left: 16px;
+}
+
+.brands__bosch {
+    background-image: url(../images/bosch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 128px;
+    height: 29px;
+    padding-left: 16px;
+}
+
+.brands__hp {
+    background-image: url(../images/hp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 52px;
+    height: 52px;
+    padding-left: 16px;
+}
+
+.brands__acer {
+    background-image: url(../images/acer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 94px;
+    height: 24px;
+    padding-left: 16px;
+
+}
+
+.brands__sony {
+    background-image: url(../images/Sony.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 128px;
+    height: 25px;
+    padding-left: 16px;
+}
+
+.brands__link {
+    background-image: url(../images/go.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    padding-right: 16px;
+
+}
+
+.show-button,
+.hide-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.show-button::before {
+    content: url(../images/expand.png);
+    position: absolute;
+    transform: translateX(-30px);
+}
+
+.hide-button::before {
+    content: url(../images/expand.png);
+    position: absolute;
+    transform: rotate(180deg) translateX(30px) translateY(20%);
+
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.brands__container {
+    max-width: 1200px;
+}
+
+@media (max-width: 767px) {
+    .brands__slider .swiper-wrapper {
+        display: flex;
+        height: 130px;
+    }
+
+    .brands__card {
+        width: 240px;
+    }
+
+    .swiper-slide {
+        width: 240px;
+        margin-left: 15px;
+    }
+
+    .show-button,
+    .hide-button {
+        display: none;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .brands__slider .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands__card {
+        width: 224px;
+    }
+
+    .swiper-slide {
+        width: 224px;
+        margin-left: 24px;
+    }
+
+}
+
+@media (min-width: 1120px) {
+    .brands__card {
+        width: 240px;
+    }
+
+    .swiper-slide {
+        width: 240px;
+        margin-right: 10px;
+    }
+}
